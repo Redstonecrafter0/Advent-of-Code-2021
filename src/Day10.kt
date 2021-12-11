@@ -66,10 +66,10 @@ fun main() {
     println(part2(input))
 }
 
-val Char.isOpen: Boolean
+private val Char.isOpen: Boolean
     get() = this == '(' || this == '[' || this == '{' || this == '<'
 
-val Char.inverted: Char
+private val Char.inverted: Char
     get() = when (this) {
         '(' -> ')'
         ')' -> '('
